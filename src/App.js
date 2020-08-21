@@ -6,11 +6,9 @@ import Chat from "./Chat";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
+    <div className="app">
       <Router>
-        <div className="app">
-          <Header />
-        </div>
+        <Header />
         <div className="app__body">
           <Sidebar />
           <Switch>
