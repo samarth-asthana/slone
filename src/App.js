@@ -3,7 +3,10 @@ import "./App.css";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
+import Login from "./Login";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
   const [user, setUser] = useState(null);
 
@@ -11,7 +14,7 @@ function App() {
     <div className="app">
       <Router>
         {!user ? (
-          <h1>Login Page</h1>
+          <Login />
         ) : (
           <>
             <Header />
